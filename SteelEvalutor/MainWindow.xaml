@@ -1,0 +1,65 @@
+﻿<Window x:Class="SteelEvalutor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SteelEvalutor"
+        mc:Ignorable="d"
+        Title="Steel Evaluator Tool" Height="450" Width="800">
+    <Grid Margin="1,0,-1.4,0">
+        
+        
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Select Steel Grade" VerticalAlignment="Top" Margin="100,234,0,0" Width="120"/>
+        
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Select Steel Diameter" VerticalAlignment="Top" Margin="250,234,0,0" Width="120"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Full Piece Height (ft)" VerticalAlignment="Top" Margin="250,59,0,0" Width="120"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Full Piece Length (ft)" VerticalAlignment="Top" Margin="100,59,0,0" Width="120"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Number of Posts" VerticalAlignment="Top" Margin="100,146,0,0" Width="120"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Number of Lines" VerticalAlignment="Top" Margin="250,146,0,0" Width="120"/>
+
+
+        <TextBox x:Name="Length" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="100,75,0,0" RenderTransformOrigin="2.587,6.797" Text=""/>
+        
+        <TextBox x:Name="Height" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="250,75,0,0" Text=""/>
+
+        <TextBox x:Name="Posts" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="100,162,0,0" Text=""/>
+
+        <TextBox x:Name="Lines" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="250,162,0,0" Text=""/>
+
+        <ComboBox x:Name="Grade" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="100,250,0,0" >
+            <ComboBoxItem Content="Schedule 40" HorizontalAlignment="Left" Width="118.4" />
+            <ComboBoxItem Content="Schedule 80" HorizontalAlignment="Left" Width="118.4" />
+        </ComboBox>
+        <ComboBox x:Name="Diameter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="250,250,0,0" RenderTransformOrigin="1.013,-0.842">
+            <ComboBoxItem Content="1 inch diameter" HorizontalAlignment="Left" Width="118.4" />
+            <ComboBoxItem Content="1.25 inch diameter" HorizontalAlignment="Left" Width="118.4" />
+            <ComboBoxItem Content="1.5 inch diameter" HorizontalAlignment="Left" Width="118.4" />
+        </ComboBox>
+
+
+        <Button Content="Get Appraisal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="173" Margin="493,61,0,0" Height="42" Click="Button_Click"/>
+
+        <TextBox x:Name="FinalWeight" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="438,168,0,0" RenderTransformOrigin="0.609,0.48"/>
+        
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Item Weight" VerticalAlignment="Top" Margin="438,152,0,0"/>
+
+        <TextBox x:Name="Joints" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="606,168,0,0"/>
+        
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Number of Joints" VerticalAlignment="Top" Margin="606,152,0,0"/>
+
+        <TextBox x:Name="LinealFeet" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="438,228,0,0"/>
+        
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Total Lineal Feet" VerticalAlignment="Top" Margin="438,212,0,0"/>
+
+        <TextBox x:Name="SticksQty" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="606,228,0,0"/>
+        
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sticks Required" VerticalAlignment="Top" Margin="606,212,0,0"/>
+
+
+
+    </Grid>
+</Window>
